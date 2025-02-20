@@ -1,0 +1,85 @@
+.join-container {
+    height: 100%;
+
+    .join-wrap {
+        border: 1px solid black;
+        height: 550px;
+        width: 600px;
+        margin: auto;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .logo {
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+
+        .input-box {
+            width: 268px;
+            height: 38px;
+            border: 1px solid var(--border--Color);
+            background-color: var(--inputbox--background--Color);
+            padding: 1px 0px 0px 0px;
+            margin-bottom: 48px;
+            position: relative;
+
+            input {
+                background-color: var(--inputbox--background--Color);
+                border: none;
+                padding: 9px 0px 7px 8px;
+                outline: none;
+                text-overflow: ellipsis;
+                width: 254px;
+            }
+        }
+
+        .nickname-box {
+            margin-bottom: 30;
+        }
+
+        .label {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            transition: 0.2s ease all;
+            font-size: 16px;
+            color: #999;
+        }
+
+        .input:focus+.label,
+        .input:not(:placeholder-shown)+.label {
+            top: -19px;
+            left: 0px;
+            font-size: 12px;
+            color: #3f51b5;
+        }
+
+        .join-btn {
+            margin-top: 20px;
+            width: 268px;
+            height: 40px;
+            color: white;
+            background-color: var(--main--Color);
+            font-size: 18px;
+            border-radius: 6px;
+            border: 1px solid var(--main--border--Color);
+            cursor: pointer;
+        }
+
+        .join-btn:disabled {
+            background-color: #999;
+            cursor: default;
+            border: none;
+        }
+
+        .message.error {
+            color: red;
+            font-size: 11px;
+            margin-top: 10px;
+        }
+    }
+
+
+}

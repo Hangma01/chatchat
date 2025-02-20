@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Pretendard-Regular";
+    src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+    font-style: normal;
+}
+
+:root {
+    --main--border--Color: #6697FF;
+    --main--Color: #6696FFC0;
+    --user--chat-Color: #6696FF63;
+    --sender--chat--Color: #DFDFDFB2;
+    --inputbox--background--Color: #FAFAFA;
+    --border--Color: #DBDBDB;
+    --chat--border--Color: #AAAAAA;
+}
+
+.App {
+    height: 100vh;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}

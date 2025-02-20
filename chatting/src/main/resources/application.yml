@@ -1,0 +1,44 @@
+spring:
+  # JPA
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+    database: mysql
+
+  # MySQL 데이터베이스 연결 설정
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/chatting
+    username: root
+    password: 1234
+
+  # JWT
+  jwt:
+    secret: vmfhaltmskdlstkfkdgodyroqkfwdbalroqkfwkdbalaaaaabbddbbbbb
+
+  data:
+    # Redis
+    redis:
+      host: localhost
+      port: 6379
+
+    # Mongodb
+    mongodb:
+      uri: mongodb+srv://dn09yooon:1234@chatting.6r9ju.mongodb.net/chatting?retryWrites=true&w=majority&appName=chatting
+
+
+
+# Chatgpt
+openai:
+  model: gpt-4o
+  api:
+    key: 
+    url: https://api.openai.com/v1/chat/completions
+
+
+mongodb+srv://dn09yooon:<db_password>@chatting:
+  6r9ju:
+    mongodb:
+      net/?retryWrites=true&w=majority&appName=Chatting:

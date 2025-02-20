@@ -1,0 +1,53 @@
+.chatlist-box {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    cursor: pointer;
+
+    .chatlist-profile {
+        border: 1px solid var(--border--Color);
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 45px;
+        overflow: hidden;
+
+        margin-right: 10px;
+
+    }
+
+    .chatlist-content {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        .chatlist-username {
+            font-size: 15px;
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .chatlist-lastmessage {
+            font-size: 12px;
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-height: 15px;
+        }
+    }
+}
+
+.chatlist-box.selected {
+    background-color: aliceblue;
+}
+
+.chatlist-box:hover {
+    background-color: aliceblue;
+}

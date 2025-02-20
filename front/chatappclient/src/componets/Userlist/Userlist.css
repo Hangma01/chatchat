@@ -1,0 +1,31 @@
+.user-box {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    cursor: pointer;
+
+    .user-profile {
+        border: 1px solid var(--border--Color);
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 45px;
+        overflow: hidden;
+
+        margin-right: 10px;
+
+    }
+}
+
+.user-box.selected {
+    background-color: aliceblue;
+}
+
+.user-box:hover {
+    background-color: aliceblue;
+}
